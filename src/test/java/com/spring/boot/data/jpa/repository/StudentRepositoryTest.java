@@ -4,9 +4,7 @@ import com.spring.boot.data.jpa.entity.Guardian;
 import com.spring.boot.data.jpa.entity.Student;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.BootstrapWith;
 
 import java.util.List;
 
@@ -112,15 +110,4 @@ class StudentRepositoryTest {
     public void updateStudentNameByEmailId(){
         studentRepository.updateStudentNameByEmailId("lakindu", "lakinduvirajith@gmail.com");
     }
-
-
-
-
-
-
-
-
-
-
-
 }
