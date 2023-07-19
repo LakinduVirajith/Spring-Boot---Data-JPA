@@ -15,9 +15,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @AttributeOverrides({
-        @AttributeOverride(name = "guardianName", column = @Column(name = "name")),
-        @AttributeOverride(name = "guardianEmail", column = @Column(name = "email")),
-        @AttributeOverride(name = "guardianMobile", column = @Column(name = "mobile"))
+        @AttributeOverride(name = "name", column = @Column(name = "guardianName")),
+        @AttributeOverride(name = "email", column = @Column(name = "guardianEmail")),
+        @AttributeOverride(name = "mobile", column = @Column(name = "guardianMobile"))
 })
 public class Guardian {
 
